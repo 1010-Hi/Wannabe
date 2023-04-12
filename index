@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="html/Style/style.css" rel="stylesheet" type="text/css" />
+       <link rel="shortcut icon" href="Lock.ico" type="image/x-icon">
+  </head>
+  <body>
+
+<h1>Disclamer:</h1>
+<h1>I am not responsible for any damage done to you or your device.</h1>
+
+    <script src="Scripts/anitcheat.js"> </script>
+
+<script>
+
+     var counter = 0
+    var stop = window.setInterval(counting, 1000)
+    console.log(stop)
+    var newElement = document.createElement("p")
+    var insertnum = document.createTextNode(counter)
+    newElement.appendChild(insertnum)
+
+
+    function counting() {
+        counter += 1
+
+        console.log(counter)
+
+        document.body.appendChild(newElement)
+
+
+        insertnum.replaceData(0, 2, counter)
+
+        if (counter > 5 ) {
+            window.clearInterval(stop)
+            location.href = "html/Intro.html"
+        }
+    }
+</script>
+  </body>
+</html>
